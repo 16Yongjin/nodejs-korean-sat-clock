@@ -97,4 +97,8 @@ app.post('/message', (req, res) => {
     }
 
     res.send(sendData);
-})
+});
+
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
+});
