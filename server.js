@@ -36,6 +36,10 @@ app.post('/message', (req, res) => {
         sendData = {
             'message': {
                 'text': `${leftDay}일 남았습니다. 째깍`
+            },
+            'keyboard': {
+                "type" : "buttons",
+                "buttons" : ["수능 D-day", "수능까지 남은 시간", "수능 꿀팁"]
             }
         }
     } else if (message == "수능까지 남은 시간") {
@@ -43,6 +47,10 @@ app.post('/message', (req, res) => {
         sendData = {
             'message': {
                 'text': `${leftHour}시간 남았습니다. 째깍`
+            },
+            'keyboard': {
+                "type" : "buttons",
+                "buttons" : ["수능 D-day", "수능까지 남은 시간", "수능 꿀팁"]
             }
         }
 
@@ -54,6 +62,10 @@ app.post('/message', (req, res) => {
                 sendData = {
                     'message': {
                     'text': urls[0]
+                    },
+                    'keyboard': {
+                    "type" : "buttons",
+                    "buttons" : ["수능 D-day", "수능까지 남은 시간", "수능 꿀팁"]
                     }
                 }
                 break;
@@ -67,6 +79,10 @@ app.post('/message', (req, res) => {
                         'width': 517,
                         'height': 514
                         }
+                    },
+                    'keyboard': {
+                    "type" : "buttons",
+                    "buttons" : ["수능 D-day", "수능까지 남은 시간", "수능 꿀팁"]
                     }
                 }
                 break;
@@ -74,6 +90,10 @@ app.post('/message', (req, res) => {
                 sendData = {
                     'message': {
                     'text': urls[1]
+                    },
+                    'keyboard': {
+                    "type" : "buttons",
+                    "buttons" : ["수능 D-day", "수능까지 남은 시간", "수능 꿀팁"]
                     }
                 }
                 break;
@@ -81,6 +101,10 @@ app.post('/message', (req, res) => {
                 sendData = {
                     'message': {
                     'text': urls[2]
+                    },
+                    'keyboard': {
+                    "type" : "buttons",
+                    "buttons" : ["수능 D-day", "수능까지 남은 시간", "수능 꿀팁"]
                     }
                 }
                 break;
@@ -88,6 +112,10 @@ app.post('/message', (req, res) => {
                 sendData = {
                     'message': {
                     'text': urls[3]
+                    },
+                    'keyboard': {
+                    "type" : "buttons",
+                    "buttons" : ["수능 D-day", "수능까지 남은 시간", "수능 꿀팁"]
                     }
                 }
                 break;
